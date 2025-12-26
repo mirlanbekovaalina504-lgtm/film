@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оплата</title>
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            display: flex;
+            gap: 60px;
+            align-items: center;
+        }
+
+        h1 {
+            color: #e50914;
+            margin-bottom: 10px;
+        }
+
+        .qr-box {
+            background: #111;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(229,9,20,0.3);
+        }
+
+        .qr-box img {
+            width: 220px;
+            height: 220px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .info {
+            max-width: 400px;
+        }
+
+        .success {
+            margin-top: 20px;
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 28px;
+            background: #e50914;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #f6121d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="qr-box">
+        <img src="{% static 'img/qr.png' %}" alt="QR">
+    </div>
+
+    <div class="info">
+        <h1>Оплата</h1>
+        <p>Отсканируйте QR-код для оплаты билета</p>
+
+        <div class="success">
+            ✔️ Билет забронирован
+        </div>
+
+        <a href="/" class="btn">На главную</a>
+    </div>
+
+</div>
+
+</body>
+</html>

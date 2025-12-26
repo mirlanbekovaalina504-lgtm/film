@@ -1,0 +1,292 @@
+body {
+    background: #0f0f0f;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+/* СЕТКА КАК NETFLIX */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+
+/* КАРТОЧКА */
+.movie-card {
+    background: #1c1c1c;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.08);
+}
+
+/* ФОТО */
+.movie-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ТЕКСТ */
+.movie-card h3 {
+    margin: 10px 0 5px;
+}
+
+.rating {
+    color: gold;
+    margin-bottom: 10px;
+}
+
+/* КНОПКА */
+.btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background: #e50914;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #ff1e1e;
+}
+
+body {
+    background: #141414;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.detail-page {
+    padding: 40px;
+}
+
+.detail-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.poster {
+    width: 300px;
+    border-radius: 12px;
+}
+
+.info h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.hall {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.screen {
+    background: #ccc;
+    height: 30px;
+    width: 300px;
+    margin: 0 auto 30px;
+    line-height: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.seats {
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.seat {
+    width: 35px;
+    height: 35px;
+    background: #444;
+    color: white;
+    margin: 5px;
+    line-height: 35px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.seat:hover {
+    background: #666;
+}
+
+.seat.selected {
+    background: #e50914; /* Netflix red */
+}
+
+.book-btn {
+    margin-top: 25px;
+    padding: 10px 30px;
+    font-size: 16px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seats-page {
+    background: #141414;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    margin: 20px 0;
+}
+
+.screen {
+    background: #ccc;
+    color: black;
+    width: 300px;
+    margin: 20px auto;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.seats {
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.seat {
+    width: 45px;
+    height: 45px;
+    background: #2f2f2f;
+    margin: 5px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.seat:hover {
+    background: #555;
+}
+
+.seat.selected {
+    background: #e50914;
+}
+
+.book-btn {
+    margin-top: 25px;
+    padding: 14px 30px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.book-btn:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+/* ===== SEATS PAGE (NETFLIX STYLE) ===== */
+
+.seats-page {
+    background-color: #000;
+    color: white;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.seats-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.screen {
+    width: 60%;
+    margin: 0 auto 30px;
+    padding: 10px;
+    background: #222;
+    border-radius: 5px;
+    color: #aaa;
+    letter-spacing: 3px;
+}
+
+.seats-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.seat {
+    width: 45px;
+    height: 45px;
+    background: #111;
+    border: 1px solid #444;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.seat:hover {
+    background: #e50914;   /* Netflix red */
+    transform: scale(1.1);
+}
