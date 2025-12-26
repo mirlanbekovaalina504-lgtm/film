@@ -35,13 +35,13 @@ python manage.py runserver
 ## Screenshots
 
 ### Movie list
-![Movie list](screenshots/movies.png)
+![Movie list](../screenshots/movies.png)
 
 ### Seat selection
-![Seat selection](screenshots/seats.png)
+![Seat selection](../screenshots/seats.png)
 
 ### Booking timer
-![Booking timer](screenshots/timer.png)
+![Booking timer](../screenshots/timer.png)
 
 ### QR code payment
-![QR code payment](screenshots/payment_qr.png)
+![QR code payment](../screenshots/payment_qr.png)
