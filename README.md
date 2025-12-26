@@ -1,36 +1,36 @@
-# Информационная система онлайн-бронирования билетов в кино
+# Online Cinema Ticket Booking System
 
-Данный проект представляет собой курсовую работу в виде веб-приложения для
-онлайн-бронирования билетов в кино. Система позволяет пользователям просматривать
-информацию о фильмах, их рейтинге и доступных сеансах, выбирать места в зале и
-осуществлять бронирование с последующей оплатой по QR-коду.
+This project is a course work developed as a web application for online cinema
+ticket booking. The system allows users to view movies, check ratings and
+available sessions, select seats in the cinema hall, and book tickets with
+QR-code based payment.
 
-## Цель проекта
-Разработка веб-приложения, обеспечивающего автоматизацию процесса бронирования
-билетов в кино с использованием современных веб-технологий.
+## Project Goal
+The goal of this project is to develop a web-based information system that
+automates the process of booking cinema tickets using modern web technologies.
 
-## Основной функционал
-- просмотр списка фильмов;
-- отображение рейтинга фильмов;
-- выбор киносеанса;
-- выбор мест в зале (свободные и занятые места);
-- таймер бронирования;
-- оплата с использованием QR-кода;
-- административная панель для управления фильмами и сеансами.
+## Main Features
+- movie list browsing;
+- movie rating display;
+- cinema session selection;
+- seat selection in the hall (available and occupied seats);
+- booking timer;
+- payment using QR code;
+- administrative panel for managing movies and sessions.
 
-## Используемые технологии
+## Technologies Used
 - Python
 - Django
 - HTML, CSS
 - SQLite
 - Git, GitHub
 
-## Архитектура проекта
-Приложение построено на основе клиент-серверной архитектуры с использованием
-фреймворка Django. Хранение данных осуществляется в базе данных SQLite.
-Административный интерфейс реализован с помощью Django Admin.
+## Project Architecture
+The application is built using a client-server architecture based on the Django
+framework. Data storage is implemented using an SQLite database. The
+administrative interface is provided by Django Admin.
 
-## Запуск проекта
+## Project Setup and Run
 ```bash
 pip install -r requirements.txt
 python manage.py migrate
